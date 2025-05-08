@@ -2,9 +2,11 @@
 
 
 .SYNOPSIS
+
     Enable ADMIN$, fully enable Remote Desktop (including NLA, firewall, group membership), suspend BitLocker for one reboot, then reboot via WMI remote‑process.
 
 .DESCRIPTION
+
     1. Turn on auto‑shares and restart the Server service (ADMIN$)  
     2. Enable RDP in the registry and start TermService  
     3. Require Network Level Authentication (NLA)  
@@ -14,5 +16,6 @@
     7. Reboot the machine  
 
 .NOTES
+
     - Needs WMI (RPC) access and an account in local Administrators on the target.
     - Make sure TCP 135 and dynamic RPC ports are reachable.
